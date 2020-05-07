@@ -1,0 +1,115 @@
+header{
+    background: black;
+    height: 60px;
+}
+
+header ul{
+    position:relative;
+    left: 20%;
+    right: 20%;
+}
+
+header ul li{
+    float:left;
+    font-size: 20px;
+    list-style-type: none; 
+    margin-left: 2%;
+}
+
+header ul li a{
+    display: block;
+    padding: 20px;
+    color: wheat;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: white;
+    background:orange;
+}
+
+body{
+    background-color: #dea19e;
+    border:1px;
+    margin: 0 auto;
+    width:100%;
+    background:#dea19e;
+}
+
+main{
+    border-radius:5px;
+    background-color: #FFFFFF;
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #dea19e; 
+}
+
+div{
+    margin: auto;
+    border:1px 
+}
+
+    
+h1{
+    padding: 3px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+p{
+    font-size: 20px;
+    border: 5px;
+    padding: 3px;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+img{
+    border-radius:5px;
+    border: 2px solid #CCCCCC;
+    background-color: #FFFFFF;
+    padding: 3px;
+    width: 48%;
+}
+
+iframe{
+   display: block;
+   margin-left: 5%;
+   margin-right: 5%;
+   width: 89%;
+margin-bottom: 10%;
+}
+
+#images{
+    float: left;
+    margin-left: 3%;
+    margin-right: 3%;
+   
+}
+
+#magarabilgi{
+    float: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 78%;
+    height: 150px;
+    margin-bottom: 100px;
+}
+
+#cizgi{
+    background: black;
+    height: 3px;
+}
+
+
+
+
+
+
+
+

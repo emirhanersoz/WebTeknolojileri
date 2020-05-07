@@ -1,0 +1,53 @@
+header{
+    background: black;
+    height: 60px;
+}
+
+header ul{
+    position:relative;
+    left: 20%;
+    right: 20%;
+}
+
+header ul li{
+    float:left;
+    font-size: 20px;
+    list-style-type: none; 
+    margin-left: 2%;
+}
+
+header ul li a{
+    display: block;
+    padding: 20px;
+    color: wheat;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: white;
+    background:orange;
+}
+
+body{
+    background-color: #dea19e;
+    border:1px;
+    margin: 0 auto;
+    width:100%;
+    background:#dea19e;
+}
+
+main{
+    border-radius:5px;
+    background-color: #FFFFFF;
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #dea19e; 
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    margin-left: 15%;
+    margin-right: 15%;
+}

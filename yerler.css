@@ -8,7 +8,7 @@
     }
     
     .menu a{
-        text-decoration:none;
+        text-decoration: none;
         display: block;
         padding: 1.6rem;
         color: #fff;
@@ -20,12 +20,10 @@
     }
     
     .menu a:hover{
-        background-color:(233,184,61);
+        background-color: :(233,184,61);
         display: block;
         padding: 1.6rem;
         background: black;
-        text-decoration: none;
-        color: orange;
     }
     
     .menu li:last-child a{
@@ -37,29 +35,22 @@
     }
     
     body{
-        background-color: white;
+        background-color: snow;
         border:0.1rem;
         margin: 0 auto;
         width:100%;
-        background:white;
+        background:snow;
         overflow-x:hidden; 
         overflow-y:scroll;
     }
 
     main{
         border-radius:5px;
-        background-color: white;
+        background-color: snow;
         display: block;
         margin-left: 20%;
         margin-right: 20%;
-        background-color: white; 
-    }
-    h1{
-        font-size: 2.2rem;
-    }
-    
-    h2{
-        text-align: center;
+        background-color: snow; 
     }
     
     h3{
@@ -75,53 +66,42 @@
     p{
         font-size: 1.6rem;
     }
-
-   
+    
     img{
         display: block;
-        width: 68%;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        height: 80%;
         border-radius: 1rem;
-        margin-left: 15%;
-        margin-right: 15%;
-        
     }
     
-    
-    #cizgi{
-        background: black;
-        height: 3px;
-    }
-    
-    iframe{
-       display: block;
+       iframe{
+       display: inline-block;
        margin-left: 5%;
        margin-right: 5%;
        width: 89%;
+           height: 500px;
        margin-bottom: 10%;
     }
 }
 
 @media all and (max-width: 1366px){
-    
     html{
         font-size: 12px;
     }
-    
     .menu{
         justify-content: center;     
     }
-    
     iframe{
         height: 300px;
     }
 }
 
 @media all and (max-width: 700px){
-    
     html{
         font-size: 10px;
     }
-    
     .menu{
         justify-content: space-around;
         flex-direction: column;
@@ -130,7 +110,6 @@
     .menu a{
         padding: 0.8rem; 
     }
-    
     .menu a:hover{
         background-color: :(233,184,61);
         padding: 0.8rem;
@@ -142,19 +121,16 @@
     }
 }
 
-.item{    
-    background-color: white;
-    color: #fff;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
+
+
+
+
+
+
+
+
+
 
 
 

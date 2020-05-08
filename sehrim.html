@@ -4,11 +4,13 @@
     <title>ŞEHRİM</title>
     <link rel="stylesheet" href="sehrim.css";>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-
 <body>
     <header>
-        <ul>
+        <ul class="menu">
             <li><a href="">Hakkımda</a></li>
             <li><a href="">Özgeçmişim</a></li>
             <li><a href="sehrim.html">Şehrim</a></li>
@@ -18,65 +20,54 @@
     </header>
     
     <main>
-        <h2>ZONGULDAK GEZİLECEK YERLER</h2>
+        <h2>KARA ELMAS DİYARI "ZONGULDAK"</h2>
     <div class="container">
-	
-	<input type="radio" id="i1" name="images" checked />
-	<input type="radio" id="i2" name="images" />
-	<input type="radio" id="i3" name="images" />
-	<input type="radio" id="i4" name="images" />
-	<input type="radio" id="i5" name="images" />	
-	
-	<div class="slide_img" id="one">			
-			
-			<img src="resimler/halilpasa.png">
-			
-				<label class="prev" for="i5"><span>&#x2039;</span></label>
-				<label class="next" for="i2"><span>&#x203a;</span></label>	
-		
-	</div>
-	
-	<div class="slide_img" id="two">
-		
-			<img src="resimler/cehennemagzi.png">
-			
-				<label class="prev" for="i1"><span>&#x2039;</span></label>
-				<label class="next" for="i3"><span>&#x203a;</span></label>
-		
-	</div>
-			
-	<div class="slide_img" id="three">
-			<img src="resimler/filyos.jpg">	
-			
-				<label class="prev" for="i2"><span>&#x2039;</span></label>
-				<label class="next" for="i4"><span>&#x203a;</span></label>
-	</div>
+            <div class="cold-md-8">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href = "halilpasa.html">
+                            <img class="d-block w-100" src="resimler/halilpasa.png" alt=""></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href = "cehennemagzi.html">
+                            <img class="d-block w-100" src="resimler/cehennemagzi.png" alt=""></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="filyos.html">
+                            <img class="d-block w-100" src="resimler/filyos.jpg" alt=""></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href = "harmankaya.html">
+                            <img class="d-block w-100" src="resimler/harmankaya.jpg" alt=""></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href = "alemdar.html">
+                             <img class="d-block w-100" src="resimler/alemdar.jpg" alt=""></a>
+                    </div>
+                  </div>
+                    
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>    
+        </div>
 
-	<div class="slide_img" id="four">
-			<img src="resimler/harmankaya.jpg">	
-			
-				<label class="prev" for="i3"><span>&#x2039;</span></label>
-				<label class="next" for="i5"><span>&#x203a;</span></label>
-	</div>
-
-	<div class="slide_img" id="five">
-			<img src="resimler/alemdar.jpg">	
-			
-				<label class="prev" for="i4"><span>&#x2039;</span></label>
-				<label class="next" for="i1"><span>&#x203a;</span></label>
-
-	</div>
-
-	<div id="nav_slide">
-		<label for="i1" class="dots" id="dot1"></label>
-		<label for="i2" class="dots" id="dot2"></label>
-		<label for="i3" class="dots" id="dot3"></label>
-		<label for="i4" class="dots" id="dot4"></label>
-		<label for="i5" class="dots" id="dot5"></label>
-	</div>
-    </div><br>
+    </div>
         <arcle><hr>
-            <div id="tarihce">
+            <div>
             <h2>ZONGULDAK TARİHÇESİ</h2>
             <p>
                 Kısa bir zamanda şehir merkezi haline gelen Zonguldak’ın tarihi, yörenin tarihinden çok çok yenidir. Şehrin oluşumu, bu havalideki kömür madeninin işletilmesiyle başlamıştır.
@@ -89,10 +80,11 @@
             </p>
             <p>
                 Kurtuluş Savaşı ve sonrasında kurulan Cumhuriyet’le birlikte havza hak ettiği önemi görmüş ve Zonguldak 1 Nisan 1924 tarihinde Cumhuriyet sonrası kurulan ilk il olmuştur.
-            </p><hr>
-            <h2>Zonguldak Nüfusu</h2>
-            <img id="nufus" src="resimler/nufus.jpg"><hr>
-            <h2>Zonguldak'ın Gezilecek Yerleri</h2>
+            </p>
+            <div    >
+            <h4><u>Zonguldak Nüfusu</u></h4><br>
+            <img src="resimler/nufus.jpg"><br>
+            <h4><u>Zonguldak'ın Gezilecek Yerleri</u></h4>
                 <p id="gezilecekyerler">Halil Paşa Konağı</p>
                 <img src="resimler/halilpasa.png"><hr>
                 <p id="gezilecekyerler">Cehennemağzı Mağaraları</p>
@@ -103,21 +95,18 @@
                 <img src="resimler/harmankaya.jpg"><hr>
                 <p id="gezilecekyerler">Alemdar Gemisi</p>
                 <img src="resimler/alemdar.jpg">
-
+                </div>
                 <br><br><br><br><br>
             </div>
         </arcle>
         
-    </main>
+    </main> 
     
-    
-    
-    
-    
-    
-    
-    
-    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
 </body>
 </html>

@@ -1,0 +1,94 @@
+@media all and (max-width: 7000px){
+    .navbar ul{
+        font-size: 1.5rem;
+        margin-right: 4rem;
+    }
+    
+    .navbar ul li{
+        text-align: center;
+        margin-left: 4.3rem;
+    }
+
+    .navbar ul li a{
+        color: white;
+    }
+
+    .navbar ul li a:hover
+    {
+        color: black;
+    }
+
+    html{
+        font-size: 15px;
+    }
+    
+    body{
+        background-color: snow;
+        border:0.1rem;
+        margin: 0 auto;
+        width:100%;
+        background:snow;
+        overflow-x:hidden; 
+        overflow-y:scroll;
+    }
+
+    main{
+        border-radius:5px;
+        background-color: snow;
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: snow; 
+    } 
+    
+    img{
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;;
+        border-radius: 1rem;
+    }
+}
+
+@media all and (max-width: 1366px){
+    
+    html{
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 700px){
+    html{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

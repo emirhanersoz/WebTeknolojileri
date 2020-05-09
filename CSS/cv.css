@@ -1,0 +1,151 @@
+@media all and (max-width: 7000px){
+    .menu{
+        list-style: none;
+        display: flex;
+        justify-content:space-around;
+        flex-wrap: wrap;
+        background-color: orange;
+    }
+    
+    .menu a{
+        text-decoration: none;
+        display: block;
+        padding: 1.6rem;
+        color: #fff;
+        text-align: center;
+        border-top: 0.1rem solid rgba(255,255,255,0.3);
+        border-bottom: 0.1rem; 
+        font-size: 1.5rem;
+        
+    }
+    
+    .menu a:hover{
+        background-color: :(233,184,61);
+        display: block;
+        padding: 1.6rem;
+        background: black;
+    }
+    
+    .menu li:last-child a{
+        border-bottom: none;
+    }
+    
+    html{
+        font-size: 15px;
+    }
+    
+    body{
+        background-color: snow;
+        border:0.1rem;
+        margin: 0 auto;
+        width:100%;
+        background:snow;
+        overflow-x:hidden; 
+        overflow-y:scroll;
+    }
+
+    main{
+        border-radius:5px;
+        background-color: snow;
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: snow; 
+    }
+    
+    img{
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;;
+        border-radius: 1rem;
+    }
+    
+    .p{
+        font-size: 1rem;
+        color: white;
+        font-weight: normal;
+    }
+    
+    p{
+        color: black;
+    }
+    h3{
+        color: orange;
+    }
+    
+    .h4{
+        color: white;
+    }
+    
+    h5{
+        color: white;
+    }
+    
+    hr{
+        padding-top: 1rem;
+        color: bisque;
+    }
+
+}
+
+@media all and (max-width: 1366px){
+    html{
+        font-size: 12px;
+    }
+    .menu{
+        justify-content: center;     
+    }
+}
+
+@media all and (max-width: 700px){
+    html{
+        font-size: 10px;
+    }
+    .menu{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+    .menu a{
+        padding: 0.8rem; 
+    }
+    .menu a:hover{
+        background-color: :(233,184,61);
+        padding: 0.8rem;
+    }
+    
+    .center ul li{
+       text-align: center;
+    }
+    
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

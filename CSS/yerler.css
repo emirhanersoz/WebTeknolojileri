@@ -1,0 +1,136 @@
+@media all and (max-width: 7000px){
+    .menu{
+        list-style: none;
+        display: flex;
+        justify-content:space-around;
+        flex-wrap: wrap;
+        background-color: orange;
+    }
+    
+    .menu a{
+        text-decoration: none;
+        display: block;
+        padding: 1.6rem;
+        color: #fff;
+        text-align: center;
+        border-top: 0.1rem solid rgba(255,255,255,0.3);
+        border-bottom: 0.1rem; 
+        font-size: 1.5rem;
+        
+    }
+    
+    .menu a:hover{
+        background-color: :(233,184,61);
+        display: block;
+        padding: 1.6rem;
+        background: black;
+    }
+    
+    .menu li:last-child a{
+        border-bottom: none;
+    }
+    
+    html{
+        font-size: 15px;
+    }
+    
+    body{
+        background-color: snow;
+        border:0.1rem;
+        margin: 0 auto;
+        width:100%;
+        background:snow;
+        overflow-x:hidden; 
+        overflow-y:scroll;
+    }
+
+    main{
+        border-radius:5px;
+        background-color: snow;
+        display: block;
+        margin-left: 20%;
+        margin-right: 20%;
+        background-color: snow; 
+    }
+    
+    h3{
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    h4{
+        text-align: left;
+        font-size: 1.8rem;
+    }
+    
+    p{
+        font-size: 1.6rem;
+    }
+    
+    img{
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        height: 80%;
+        border-radius: 1rem;
+    }
+    
+       iframe{
+       display: inline-block;
+       margin-left: 5%;
+       margin-right: 5%;
+       width: 89%;
+           height: 500px;
+       margin-bottom: 10%;
+    }
+}
+
+@media all and (max-width: 1366px){
+    html{
+        font-size: 12px;
+    }
+    .menu{
+        justify-content: center;     
+    }
+    iframe{
+        height: 300px;
+    }
+}
+
+@media all and (max-width: 700px){
+    html{
+        font-size: 10px;
+    }
+    .menu{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+    .menu a{
+        padding: 0.8rem; 
+    }
+    .menu a:hover{
+        background-color: :(233,184,61);
+        padding: 0.8rem;
+    }
+    
+    iframe{
+        display: inline-block;
+        height: 60%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

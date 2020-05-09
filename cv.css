@@ -2,13 +2,13 @@
     .menu{
         list-style: none;
         display: flex;
-        justify-content:space-between;
+        justify-content:space-around;
         flex-wrap: wrap;
         background-color: orange;
     }
     
     .menu a{
-        text-decoration:none;
+        text-decoration: none;
         display: block;
         padding: 1.6rem;
         color: #fff;
@@ -20,11 +20,10 @@
     }
     
     .menu a:hover{
-        background-color:(233,184,61);
+        background-color: :(233,184,61);
         display: block;
         padding: 1.6rem;
         background: black;
-
     }
     
     .menu li:last-child a{
@@ -36,75 +35,73 @@
     }
     
     body{
-        background-color: white;
+        background-color: snow;
         border:0.1rem;
         margin: 0 auto;
         width:100%;
-        background:white;
+        background:snow;
         overflow-x:hidden; 
         overflow-y:scroll;
     }
 
     main{
         border-radius:5px;
-        background-color: white;
+        background-color: snow;
         display: block;
-        margin-left: 20%;
-        margin-right: 20%;
-        background-color: white; 
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: snow; 
     }
     
-    h2{
-        text-align: center;
-    }
-    
-    h3{
-        text-align: center;
-        font-size: 2rem;
-    }
-    
-    h4{
-        text-align: left;
-        font-size: 1.8rem;
-    }
-    
-    p{
-        font-size: 1.6rem;
-    }
-
-   
     img{
         display: block;
-        margin-left: 10%;
-        margin-right: 10%;
-        width: 80%;
-        height: 80%;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;;
         border-radius: 1rem;
     }
     
-    .carousel-inner img{
-        display: block;
-        margin: auto;
+    .p{
+        font-size: 1rem;
+        color: white;
+        font-weight: normal;
     }
+    
+    p{
+        color: black;
+    }
+    h3{
+        color: orange;
+    }
+    
+    .h4{
+        color: white;
+    }
+    
+    h5{
+        color: white;
+    }
+    
+    hr{
+        padding-top: 1rem;
+        color: bisque;
+    }
+
 }
 
 @media all and (max-width: 1366px){
-    
     html{
         font-size: 12px;
     }
-    
     .menu{
         justify-content: center;     
     }
 }
 
 @media all and (max-width: 700px){
-    
     html{
         font-size: 10px;
     }
-    
     .menu{
         justify-content: space-around;
         flex-direction: column;
@@ -113,12 +110,31 @@
     .menu a{
         padding: 0.8rem; 
     }
-    
     .menu a:hover{
         background-color: :(233,184,61);
         padding: 0.8rem;
     }
+    
+    .center ul li{
+       text-align: center;
+    }
+    
 }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

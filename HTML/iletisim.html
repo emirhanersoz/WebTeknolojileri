@@ -1,99 +1,246 @@
 <!DOCTYPE html>
  <html>
   <head>
-   <title>Başlığım</title>
+   <title>İletişim</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href = "..//CSS/iletisim.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      
+      
+      <script>
+      
+        function isValid(form){
+            var adi = form.adi.value;
+            var soyad = form.soyad.value;
+            var email = form.email.value;
+            var atpos = email.indexOf("@");
+            var dotpos = email.lastIndexOf(".");
+            var message = form.message.value;
+            var cinsiyet = form.cinsiyet.value;
+            
+            if(adi == null || adi == "" || adi.length < 3)
+                {
+                    alert("İsim 3 karakterden az olamaz.");
+                    return false;
+                }
+            
+            if(soyad == null || soyad == "" || soyad.length < 2)
+                {
+                    alert("Soyad 2 karakterden az olamaz.");
+                    return false;
+                }
+            
+            if ( atpos < 1 || dotpos < atpos + 2 || dotpos + 2 > email.length)
+                {
+                    alert("Geçerli email adresi girin.");
+                    return false;
+                }
+            
+            if (message == null || message == "" || message.length < 10)
+                {
+                    alert("Mesaj en az 10 karakter içermelidir.");
+                    return false;
+                }
+            
+            if (cinsiyet == null || cinsiyet == "")
+                {
+                    alert("Cinsiyet seçimi yapınız.");
+                    return false;
+                }
+        }    
+      
+      </script>
   </head>
+     
    <body>
+       
     <header>
        <nav class="navbar bg-warning navbar-expand-sm justify-content-center mt-3 mb-5">         
            <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="1" class="nav-link">Hakkında</a>
+                    <a href="hakkinda.html" class="nav-link">Hakkında</a>
                 </li>
                 <li class="nav-item">
-                    <a href="1" class="nav-link">Özgeçmişim</a>
+                    <a href="cv.html" class="nav-link">Özgeçmişim</a>
                 </li>
                 <li class="nav-item">
-                    <a href="1" class="nav-link">Şehrim</a>
+                    <a href="sehrim.html" class="nav-link">Şehrim</a>
                 </li>              
                 <li class="nav-item">
-                    <a href="1" class="nav-link">Mirasım</a>
+                    <a href="mirasimiz.html" class="nav-link">Mirasım</a>
                 </li>
                 <li class="nav-item">
-                    <a href="1" class="nav-link">İletişim</a>
+                    <a href="iletisim.html" class="nav-link">İletişim</a>
                 </li>          
                </ul>
        </nav>
     </header>
-       <form class="w-75 mx-auto my-4">
+       
+       <form action = "iletisim.php" target="_blank" onsubmit="return isValid(this)" method="post" class="w-50 mx-auto my-4">
+        <h3>İletişim Formu</h3>
+           
         <div class="form-group">
             <label for=isim>İsim</label> 
-           <input type="text" class="form-control" placeholder="İsim Giriniz">
-        </div> 
+           <input type="text" name="adi" class="form-control" placeholder="İsim Giriniz">
+        </div>
+           
         <div class="form-group">
             <label for="soyad">Soyad</label>
-            <input type="text" class="form-control" placeholder="Soyad Giriniz">                
+            <input type="text" name="soyad" class="form-control" placeholder="Soyad Giriniz">                
          </div> 
            
         <div class = "form-group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" placeholder="Email Giriniz">    
-        </div>                                     
+            <input type="email" name="email" class="form-control" placeholder="Email Giriniz">    
+        </div>
+           
           <div>
             <label for="sehir">Şehir</label>
              <select name="sehir" id="sehir" class="form-control">
-                <option value="0">Ankara</option>
-                 <option value="1">İstanbul</option>
-                 <option value="2">Sakarya</option>
-                <option value="3">Zonguldak</option>
-        
+                    <option value="0"></option>
+                    <option value="1">Adana</option>
+                    <option value="2">Adıyaman</option>
+                    <option value="3">Afyonkarahisar</option>
+                    <option value="4">Ağrı</option>
+                    <option value="5">Amasya</option>
+                    <option value="6">Ankara</option>
+                    <option value="7">Antalya</option>
+                    <option value="8">Artvin</option>
+                    <option value="9">Aydın</option>
+                    <option value="10">Balıkesir</option>
+                    <option value="11">Bilecik</option>
+                    <option value="12">Bingöl</option>
+                    <option value="13">Bitlis</option>
+                    <option value="14">Bolu</option>
+                    <option value="15">Burdur</option>
+                    <option value="16">Bursa</option>
+                    <option value="17">Çanakkale</option>
+                    <option value="18">Çankırı</option>
+                    <option value="19">Çorum</option>
+                    <option value="20">Denizli</option>
+                    <option value="21">Diyarbakır</option>
+                    <option value="22">Edirne</option>
+                    <option value="23">Elazığ</option>
+                    <option value="24">Erzincan</option>
+                    <option value="25">Erzurum</option>
+                    <option value="26">Eskişehir</option>
+                    <option value="27">Gaziantep</option>
+                    <option value="28">Giresun</option>
+                    <option value="29">Gümüşhane</option>
+                    <option value="30">Hakkâri</option>
+                    <option value="31">Hatay</option>
+                    <option value="32">Isparta</option>
+                    <option value="33">Mersin</option>
+                    <option value="34">İstanbul</option>
+                    <option value="35">İzmir</option>
+                    <option value="36">Kars</option>
+                    <option value="37">Kastamonu</option>
+                    <option value="38">Kayseri</option>
+                    <option value="39">Kırklareli</option>
+                    <option value="40">Kırşehir</option>
+                    <option value="41">Kocaeli</option>
+                    <option value="42">Konya</option>
+                    <option value="43">Kütahya</option>
+                    <option value="44">Malatya</option>
+                    <option value="45">Manisa</option>
+                    <option value="46">Kahramanmaraş</option>
+                    <option value="47">Mardin</option>
+                    <option value="48">Muğla</option>
+                    <option value="49">Muş</option>
+                    <option value="50">Nevşehir</option>
+                    <option value="51">Niğde</option>
+                    <option value="52">Ordu</option>
+                    <option value="53">Rize</option>
+                    <option value="54">Sakarya</option>
+                    <option value="55">Samsun</option>
+                    <option value="56">Siirt</option>
+                    <option value="57">Sinop</option>
+                    <option value="58">Sivas</option>
+                    <option value="59">Tekirdağ</option>
+                    <option value="60">Tokat</option>
+                    <option value="61">Trabzon</option>
+                    <option value="62">Tunceli</option>
+                    <option value="63">Şanlıurfa</option>
+                    <option value="64">Uşak</option>
+                    <option value="65">Van</option>
+                    <option value="66">Yozgat</option>
+                    <option value="67">Zonguldak</option>
+                    <option value="68">Aksaray</option>
+                    <option value="69">Bayburt</option>
+                    <option value="70">Karaman</option>
+                    <option value="71">Kırıkkale</option>
+                    <option value="72">Batman</option>
+                    <option value="73">Şırnak</option>
+                    <option value="74">Bartın</option>
+                    <option value="75">Ardahan</option>
+                    <option value="76">Iğdır</option>
+                    <option value="77">Yalova</option>
+                    <option value="78">Karabük</option>
+                    <option value="79">Kilis</option>
+                    <option value="80">Osmaniye</option>
+                    <option value="81">Düzce</option>
              </select>
               
               <div class="form-group">
                 <label for="message">Mesaj</label>
-                  <textarea name="message" cols="30" rows="10" class="form-control"></textarea>
-              
+                  <textarea name="message" cols="30" rows="10" class="form-control" placeholder="Mesajınızı Giriniz"></textarea>
               </div>
               
-              <div class="form-group">
+            <div class="form-row">
+              <div class="form-group col-md-6">
                 <legend>Hobiler</legend>
                   <div class="form-check">
                         <label class="form-check-label">
-                      <input type="checkbox">Koşu
+                      <input name="hobi" type="checkbox">Koşu
                       </label>
                   </div>
+                  
                   <div class="form-check">
                         <label class="form-check-label">
-                      <input type="checkbox">Yüzme
+                      <input name="hobi" type="checkbox">Yüzme
                       </label>
                   </div>
+                  
                   <div class="form-check">
                         <label class="form-check-label">
-                      <input type="checkbox">Basketbol
+                      <input name="hobi" type="checkbox">Basketbol
                       </label>
                   </div>
+                  
                   <div class="form-check">
                         <label class="form-check-label">
-                      <input type="checkbox">Futbol
+                      <input name="hobi" type="checkbox">Futbol
                       </label>
                   </div>
+                  
                   <div class="form-check">
                         <label class="form-check-label">
-                      <input type="checkbox">Bilgisayar Oyunları
+                      <input name="hobi" type="checkbox">Bilgisayar Oyunları
                       </label>
                   </div>
+                  
               </div>
-           </div> 
-           
-           
-      </form>
-       
-       
-       
+                <div class = "col-md-6 mt-4">
+                  <legend>Cinsiyet</legend>
+                  <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="erkek" name="cinsiyet" class="custom-control-input">
+                      <label class="custom-control-label" for="erkek">Erkek</label>
+                  </div>
+
+                  <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="kız" name="cinsiyet" class="custom-control-input">
+                      <label class="custom-control-label" for="kız">Kız</label>
+                  </div>
+                </div>
+                
+                  <div class="center mb-5">
+                     <input type="submit" value="Gönder">
+                    <input type="reset">
+                 </div>
+               </div> 
+           </div>
+        </form> 
    </body>
  </html>
 

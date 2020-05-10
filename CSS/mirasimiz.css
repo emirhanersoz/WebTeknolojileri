@@ -1,35 +1,22 @@
 @media all and (max-width: 7000px){
-    .menu{
-        list-style: none;
-        display: flex;
-        justify-content:space-around;
-        flex-wrap: wrap;
-        background-color: orange;
-    }
-    
-    .menu a{
-        text-decoration:none;
-        display: block;
-        padding: 1.6rem;
-        color: #fff;
-        text-align: center;
-        border-top: 0.1rem solid rgba(255,255,255,0.3);
-        border-bottom: 0.1rem; 
+   
+    .navbar ul{
         font-size: 1.5rem;
-        
+        margin-right: 4rem;
     }
     
-    .menu a:hover{
-        background-color:(233,184,61);
-        display: block;
-        padding: 1.6rem;
-        background: black;
-        text-decoration: none;
-        color: orange;
+    .navbar ul li{
+        text-align: center;
+        margin-left: 4.3rem;
     }
-    
-    .menu li:last-child a{
-        border-bottom: none;
+
+    .navbar ul li a{
+        color: white;
+    }
+
+    .navbar ul li a:hover
+    {
+        color: black;
     }
     
     html{
@@ -54,6 +41,7 @@
         margin-right: 20%;
         background-color: white; 
     }
+    
     h1{
         font-size: 2.2rem;
     }
@@ -75,8 +63,7 @@
     p{
         font-size: 1.6rem;
     }
-
-   
+ 
     img{
         border-radius:5px;
         border: 2px solid #CCCCCC;
@@ -84,7 +71,6 @@
         padding: 3px;
         width: 45%;
     }
-    
     
     #cizgi{
         background: black;
@@ -105,19 +91,13 @@
        margin-right: 5%;
        width: 89%;
        margin-bottom: 10%;
-    }
-    
-
+    }  
 }
 
 @media all and (max-width: 1366px){
     
     html{
         font-size: 12px;
-    }
-    
-    .menu{
-        justify-content: center;     
     }
     
     img{
@@ -144,21 +124,7 @@
     html{
         font-size: 10px;
     }
-    
-    .menu{
-        justify-content: space-around;
-        flex-direction: column;
-    }
-    
-    .menu a{
-        padding: 0.8rem; 
-    }
-    
-    .menu a:hover{
-        background-color: :(233,184,61);
-        padding: 0.8rem;
-    }
-    
+
     img{
         margin-bottom: 0.5rem;
         margin-top: 0.5rem;

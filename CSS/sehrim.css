@@ -1,36 +1,23 @@
 @media all and (max-width: 7000px){
-    .menu{
-        list-style: none;
-        display: flex;
-        justify-content:space-between;
-        flex-wrap: wrap;
-        background-color: orange;
-    }
-    
-    .menu a{
-        text-decoration:none;
-        display: block;
-        padding: 1.6rem;
-        color: #fff;
-        text-align: center;
-        border-top: 0.1rem solid rgba(255,255,255,0.3);
-        border-bottom: 0.1rem; 
+   .navbar ul{
         font-size: 1.5rem;
-        
+        margin-right: 4rem;
     }
     
-    .menu a:hover{
-        background-color:(233,184,61);
-        display: block;
-        padding: 1.6rem;
-        background: black;
+    .navbar ul li{
+        text-align: center;
+        margin-left: 4.3rem;
+    }
 
+    .navbar ul li a{
+        color: white;
     }
-    
-    .menu li:last-child a{
-        border-bottom: none;
+
+    .navbar ul li a:hover
+    {
+        color: black;
     }
-    
+
     html{
         font-size: 15px;
     }
@@ -72,7 +59,6 @@
         font-size: 1.6rem;
     }
 
-   
     img{
         display: block;
         margin-left: 10%;
